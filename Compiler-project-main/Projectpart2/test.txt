@@ -1,0 +1,14 @@
+def foo_6(): returns int 
+begin 
+if TRUE: 
+begin 
+return 0; 
+end 
+end
+
+def _main_():
+var
+    type int:result;
+begin
+    result = foo_6();
+end

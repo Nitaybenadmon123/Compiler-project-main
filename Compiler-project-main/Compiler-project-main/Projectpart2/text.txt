@@ -1,0 +1,33 @@
+def process_data(par1 real:input; par2 string:text): returns string 
+var
+    type int: i;
+    type real: computed;
+    type char*: ptr;
+begin
+    for (i = 0; i < 10; i = i + 1):
+    begin
+        computed = input + i;
+        if computed > 0.0:  
+        begin
+            var
+                type bool: flag;
+            begin
+                flag = computed > 5.0; 
+                ptr = &text[i];
+                if flag and (computed > 5.0):  
+                begin
+                    return text;
+                end
+            end
+        end
+    end
+    return "default";
+end
+
+def _main_():
+var
+    type int: final_result;
+    type string: result;
+begin
+    result = process_data(2.5, "test");
+end
